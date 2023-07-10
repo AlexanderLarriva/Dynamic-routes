@@ -19,6 +19,6 @@ def courses(id):
         if company['id'] == id:
             return jsonify(company)
     # abort(404, "Page not found")
-    return make_response(jsonify({'error': 'Page not found'}), 404)
+    return make_response(('Page not found'), 404)
 
 # END
